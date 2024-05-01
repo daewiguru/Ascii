@@ -1,3 +1,4 @@
+import json
 from .grayscale import grayscale
    # Добавляем перенос строки после каждой строки изображения
 def save_ascii_art(image_path, output_file):
@@ -8,10 +9,13 @@ def save_ascii_art(image_path, output_file):
     ascii_height = grayscale_image.height
     # Масштабируем изображение с новыми размерами
     resized_image = grayscale_image.resize((ascii_width, ascii_height))
+    
     # Открываем файл для записи ASCII-графики
     with open(output_file, "w") as f:
-        # Определяем символы для оттенков серого
-        ascii_chars = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
+        # Загружаем ASCII символы из файла
+        with open('config/config.json', "r") as chars_file:
+            ascii_chars = json.load(chars_file)
+
         # Проходим по каждому пикселю изображения и преобразуем его в символ ASCII
         for y in range(ascii_height):
             for x in range(ascii_width):

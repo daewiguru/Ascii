@@ -1,11 +1,9 @@
 from PIL import Image
 
-def grayscale(image):
+def grayscale(image, max_size=(512,512)):
     '''Функция, переводящая картинку в черно-белый вариант'''
     img = Image.open(image)
-    
-    # Устанавливаем новое разрешение до 1000x1000 пикселей, сохраняя пропорции
-    max_size = (512, 512)
+
     img.thumbnail(max_size)
 
     width, height = img.size

@@ -14,7 +14,7 @@ def display_ascii_in_window(ascii_file):
     root.configure(bg="black")  # Устанавливаем черный фон окна
 
     # Создаем метку для отображения ASCII-графики с меньшим размером шрифта
-    ascii_label = tk.Label(root, text=display_ascii_art(ascii_file), font=("Courier", 1), bg="white", fg="black")
+    ascii_label = tk.Label(root, text=display_ascii_art(ascii_file), font=("Courier", 1), bg="black", fg="white")
     ascii_label.pack()
 
     # Запускаем главный цикл обработки событий
