@@ -1,1 +1,22 @@
 2024-05-01 20:48:49,868 - INFO - Ascii art saved to save_ascii.txt
+2024-05-01 20:56:25,692 - ERROR - Usage: python run.py <path_to_image>
+2024-05-01 21:26:04,006 - ERROR - An error occurred: type object 'Image' has no attribute 'open'
+2024-05-01 21:33:27,713 - ERROR - An error occurred: Image.__init__() missing 1 required positional argument: 'file_path'
+2024-05-01 21:37:37,407 - ERROR - An error occurred: Image.__init__() missing 1 required positional argument: 'file_path'
+2024-05-01 21:41:24,227 - ERROR - An error occurred: Image.__init__() missing 1 required positional argument: 'file_path'
+2024-05-01 21:44:15,826 - ERROR - An error occurred: Image.__init__() missing 1 required positional argument: 'file_path'
+2024-05-01 21:47:28,359 - ERROR - An error occurred: set_pixel
+2024-05-01 21:50:01,826 - ERROR - An error occurred: Image.putpixel() takes 3 positional arguments but 4 were given
+2024-05-01 21:51:05,756 - INFO - Ascii art saved to save_ascii.txt
+2024-05-02 09:50:29,702 - ERROR - An error occurred: [Errno 2] No such file or directory: 'images'
+2024-05-02 09:58:27,414 - ERROR - An error occurred: [Errno 2] No such file or directory: 'images'
+2024-05-02 10:02:09,678 - ERROR - An error occurred: [Errno 20] Not a directory: 'test.jpg'
+2024-05-02 10:04:33,186 - ERROR - An error occurred: [Errno 2] No such file or directory: 'image'
+2024-05-02 10:07:39,645 - ERROR - An error occurred: 'Image' object has no attribute 'width'
+2024-05-02 10:14:42,963 - ERROR - An error occurred: 'Image' object has no attribute 'width'
+2024-05-02 10:16:31,232 - ERROR - An error occurred: [Errno 2] No such file or directory: 'images'
+2024-05-02 10:16:52,998 - ERROR - An error occurred: 'Image' object has no attribute 'get_size'
+2024-05-02 10:17:07,025 - INFO - Ascii art saved to save_ascii.txt
+2024-05-02 10:32:03,970 - INFO - Ascii art saved to save_ascii.txt
+2024-05-02 12:42:42,786 - INFO - Ascii art saved to save_ascii.txt
+2024-05-02 12:57:10,021 - INFO - Ascii art saved to save_ascii.txt
