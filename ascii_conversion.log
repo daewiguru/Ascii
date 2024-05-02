@@ -20,3 +20,19 @@
 2024-05-02 10:32:03,970 - INFO - Ascii art saved to save_ascii.txt
 2024-05-02 12:42:42,786 - INFO - Ascii art saved to save_ascii.txt
 2024-05-02 12:57:10,021 - INFO - Ascii art saved to save_ascii.txt
+2024-05-02 15:37:13,609 - ERROR - An error occurred: get_pixel
+2024-05-02 15:38:04,815 - INFO - Ascii art saved to save_ascii.txt
+2024-05-02 15:40:29,308 - INFO - Ascii art saved to save_ascii.txt
+2024-05-02 15:54:37,548 - ERROR - An error occurred: 'Image' object has no attribute 'put_pixel'
+2024-05-03 01:56:31,535 - ERROR - An error occurred: 'Image' object has no attribute 'put_pixel'
+2024-05-03 01:58:26,839 - ERROR - An error occurred: 'Image' object has no attribute 'width'
+2024-05-03 01:59:18,069 - ERROR - An error occurred: 'Image' object has no attribute 'width'
+2024-05-03 02:00:47,626 - ERROR - An error occurred: 'Image' object has no attribute 'width'
+2024-05-03 02:05:06,119 - ERROR - An error occurred: 'Image' object has no attribute 'size'
+2024-05-03 02:06:39,160 - ERROR - An error occurred: 'Image' object has no attribute 'width'
+2024-05-03 02:08:33,870 - ERROR - An error occurred: 'Image' object has no attribute 'width'
+2024-05-03 02:09:25,218 - ERROR - An error occurred: 'Image' object has no attribute 'getpixel'
+2024-05-03 02:10:01,292 - ERROR - An error occurred: Image.get_pixel() missing 1 required positional argument: 'y'
+2024-05-03 02:10:50,579 - INFO - Ascii art saved to save_ascii.txt
+2024-05-03 02:17:32,087 - INFO - Ascii art saved to save_ascii.txt
+2024-05-03 03:22:47,315 - INFO - Ascii art saved to save_ascii.txt
