@@ -36,3 +36,8 @@
 2024-05-03 02:10:50,579 - INFO - Ascii art saved to save_ascii.txt
 2024-05-03 02:17:32,087 - INFO - Ascii art saved to save_ascii.txt
 2024-05-03 03:22:47,315 - INFO - Ascii art saved to save_ascii.txt
+2024-05-05 03:33:12,688 - ERROR - Usage: python run.py <path_to_image>
+2024-05-05 03:33:25,929 - ERROR - Usage: python run.py <path_to_image>
+2024-05-05 03:34:45,729 - INFO - Ascii art saved to save_ascii.txt
+2024-05-05 03:37:31,067 - INFO - Ascii art saved to save_ascii.txt
+2024-05-05 03:38:53,907 - INFO - Ascii art saved to save_ascii.txt

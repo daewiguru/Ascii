@@ -11,23 +11,49 @@ class Image():
 
     @property
     def width(self):
-        return self._image.width
+        try:
+            return self._image.width
+        except AttributeError:
+            raise ValueError("Image is not loaded or is corrupted")
 
     @property
     def height(self):
-        return self._image.height
+        try:
+            return self._image.height
+        except AttributeError:
+            raise ValueError("Image is not loaded or is corrupted")
 
     def sizeof(self):
-        return self.width, self.height
+        try:
+            return self.width, self.height
+        except ValueError:
+            raise ValueError("Image is not loaded or is corrupted")
 
     def get_pixel(self, x, y):
-        return self._image.getpixel((x, y))
+        try:
+            return self._image.getpixel((x, y))
+        except AttributeError:
+            raise ValueError("Image is not loaded or is corrupted")
+        except IndexError:
+            raise ValueError("Pixel coordinates are out of range")
 
     def put_pixel(self, x, y, color):
-        self._image.putpixel((x, y), color)
+        try:
+            self._image.putpixel((x, y), color)
+        except AttributeError:
+            raise ValueError("Image is not loaded or is corrupted")
+        except IndexError:
+            raise ValueError("Pixel coordinates are out of range")
+        except ValueError:
+            raise ValueError("Invalid color value")
 
     def set_size(self, size):
-        self._image = self._image.resize(size)
+        try:
+            self._image = self._image.resize(size)
+        except AttributeError:
+            raise ValueError("Image is not loaded or is corrupted")
+        except ValueError:
+            raise ValueError("Invalid size provided")
 
     @classmethod
     def open(cls, file_path):
