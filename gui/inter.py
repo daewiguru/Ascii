@@ -1,21 +1,18 @@
 import tkinter as tk
-
+"""Модуль отображающий файл с аски артом в оконное приложение"""
 def display_ascii_art(ascii_file):
-    # Открываем файл с ASCII-графикой для чтения
+    """Функция считывающая аски арт"""
     with open(ascii_file, "r") as f:
-        # Считываем ASCII-графику из файла
         ascii_art = f.read()
     return ascii_art
 
 def display_ascii_in_window(ascii_file):
-    # Создаем окно
+    """Функция, отвечающая за создание окна"""
     root = tk.Tk()
     root.title("ASCII Art Viewer")
-    root.configure(bg="black")  # Устанавливаем черный фон окна
+    root.configure(bg="black") 
 
-    # Создаем метку для отображения ASCII-графики с меньшим размером шрифта
     ascii_label = tk.Label(root, text=display_ascii_art(ascii_file), font=("Courier", 1), bg="black", fg="white")
     ascii_label.pack()
 
-    # Запускаем главный цикл обработки событий
     root.mainloop()

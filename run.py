@@ -1,7 +1,9 @@
 import sys
 import logging
 from translate.translate import save_ascii_art
+from translate.asn_translate import colorize_ascii_art
 from gui.inter import display_ascii_in_window
+import os
 """Модуль предназначенный для заупска проекта,
     также выполняет роль логирования"""
 logging.basicConfig(filename='ascii_conversion.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

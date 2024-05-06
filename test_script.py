@@ -1,5 +1,5 @@
 import unittest
-
+"""Модуль, который отвечает за заупуск тестов"""
 if __name__ == "__main__":
     loader = unittest.TestLoader()
     suite = loader.discover(

@@ -1,8 +1,9 @@
 from translate.translate import save_ascii_art
 import unittest
 import filecmp
-
+"""Тестирование"""
 class TestAsciiFile(unittest.TestCase):
+    """Класс, овтечающий за тестирование"""
     def test_one_image(self):
         file1 = 'test.jpg'
         file2 = 'test.jpg'
