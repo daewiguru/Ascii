@@ -2,12 +2,15 @@ import json
 from .grayscale import grayscale
 
 
-def save_ascii_art(image_path, output_file):
+def save_ascii_art(image_path, output_file, size = (None, None)):
     """Функция преобразующая картинку в аски символы
      и сохраняющая эти символы в файл
        """
     try:
-        grayscale_image = grayscale(image_path)
+        if size[0] and size[1] != None:
+            grayscale_image = grayscale(image_path, size)
+        else:
+            grayscale_image = grayscale(image_path)
     except FileNotFoundError:
         print(f"Error: Image {image_path} not found or cannot be opened.")
         return None

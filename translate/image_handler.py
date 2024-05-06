@@ -1,13 +1,12 @@
 from PIL import Image as PILImage
 
 class Image():
-    def __init__(self, file_path, default_size=(512, 512)):
+    def __init__(self, file_path):
         try:
             self._image = PILImage.open(file_path)
         except IOError:
             raise FileNotFoundError(f"Image {file_path} not found or cannot be opened")
 
-        self._default_size = default_size
 
     @property
     def width(self):
@@ -54,6 +53,7 @@ class Image():
             raise ValueError("Image is not loaded or is corrupted")
         except ValueError:
             raise ValueError("Invalid size provided")
+
 
     @classmethod
     def open(cls, file_path):
