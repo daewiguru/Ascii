@@ -1,6 +1,8 @@
 from translate.translate import save_ascii_art
 import unittest
 import filecmp
+
+
 """Тестирование"""
 class TestAsciiFile(unittest.TestCase):
     """Класс, овтечающий за тестирование"""
