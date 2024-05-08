@@ -22,3 +22,9 @@ python3 run.py image.jpg width height
 ```
 
 Вместо ___widht___ и ___height___ нужно передать количество пикселей в ширину и высоту.
+
+Запуск тестов происходит из корня
+
+```
+python3 test_script.py
+```
