@@ -22,6 +22,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         save_ascii_art(input_image, output_file, size=(None, None))
         logging.info(f'Ascii art savet to {output_file}')
+        
         display_ascii_in_window(output_file)
         colorize_ascii_art(output_file, asn_output)
 

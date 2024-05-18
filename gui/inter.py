@@ -1,20 +1,40 @@
 import tkinter as tk
 
+class ASCIIArtViewer:
+    """Класс, отвечающий за создание окна для аски изображения """
+    def __init__(self, root, ascii_file):
+        self.root = root
+        self.root.title("ASCII Art Viewer")
+        self.root.configure(bg="black")
 
-"""Модуль отображающий файл с аски артом в оконное приложение"""
-def display_ascii_art(ascii_file):
-    """Функция считывающая аски арт"""
-    with open(ascii_file, "r") as f:
-        ascii_art = f.read()
-    return ascii_art
+        self.ascii_art = self.load_ascii_art(ascii_file)
+        self.font_size = 1  
 
+        self.ascii_label = tk.Label(self.root, text=self.ascii_art, font=("Courier", self.font_size), bg="black", fg="white")
+        self.ascii_label.pack(expand=True)
+
+        self.root.bind("<plus>", self.zoom_in)
+        self.root.bind("<minus>", self.zoom_out)
+
+    """метод для загрузки файла"""
+    def load_ascii_art(self, ascii_file):
+        """Function to read ASCII art from a file."""
+        with open(ascii_file, "r") as f:
+            return f.read()
+    """метод для увеличения маштаба"""
+    def zoom_in(self, event):
+        """Increase the font size."""
+        self.font_size += 1
+        self.ascii_label.config(font=("Courier", self.font_size))
+    """метод для уменьшения маштаба"""
+    def zoom_out(self, event):
+        """Decrease the font size."""
+        self.font_size -= 1
+        self.ascii_label.config(font=("Courier", self.font_size))
+
+"""функция, которая создает объект окна"""
 def display_ascii_in_window(ascii_file):
-    """Функция, отвечающая за создание окна"""
+    """Function to create the window."""
     root = tk.Tk()
-    root.title("ASCII Art Viewer")
-    root.configure(bg="black") 
-
-    ascii_label = tk.Label(root, text=display_ascii_art(ascii_file), font=("Courier", 1), bg="black", fg="white")
-    ascii_label.pack()
-
+    app = ASCIIArtViewer(root, ascii_file)
     root.mainloop()
