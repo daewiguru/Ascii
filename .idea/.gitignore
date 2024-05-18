@@ -3,3 +3,7 @@
 /workspace.xml
 /test/__pycache__
 /vcs.xml
+./gui./__pycache__
+./test./__pycache__
+./translate./__pycache__
+./__pycache__
